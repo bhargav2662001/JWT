@@ -29,6 +29,17 @@ public class patientdata {
     private String lastName;
     private String dateOfBirth;
     private String bloodGroup;
+
+
+    public String getemailId() {
+        return emailId;
+    }
+
+    public void setemailId(String emailId) {
+        this.emailId = emailId;
+    }
+
+
     private String emailId;
     private String mobile;
     private String address;
