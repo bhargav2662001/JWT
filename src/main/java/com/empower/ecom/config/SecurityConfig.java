@@ -50,10 +50,8 @@ public class SecurityConfig {
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
-        config.addAllowedOriginPattern("http://localhost:49713");
-        config.addAllowedOriginPattern("http://130.78.91.202:9001");
-//        config.addAllowedOrigin("*");
-
+        config.addAllowedOrigin("http://localhost:4200"); // Allow specific origin (replace with your frontend URL)
+        config.addAllowedOrigin("http://130.78.91.202:9001");
         config.addAllowedMethod("*"); // Allow all HTTP methods
         config.addAllowedHeader("*"); // Allow all headers
         config.setAllowCredentials(true); // Allow credentials
