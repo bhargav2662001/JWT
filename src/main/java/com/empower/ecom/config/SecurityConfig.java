@@ -51,7 +51,9 @@ public class SecurityConfig {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         config.addAllowedOriginPattern("http://localhost:[*]");
-        config.addAllowedOrigin("http://130.78.90.217:9001");
+//        config.addAllowedOrigin("http://130.78.90.217:9001");
+        config.addAllowedOrigin("*");
+
         config.addAllowedMethod("*"); // Allow all HTTP methods
         config.addAllowedHeader("*"); // Allow all headers
         config.setAllowCredentials(true); // Allow credentials
