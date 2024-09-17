@@ -50,8 +50,8 @@ public class SecurityConfig {
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
-        config.addAllowedOriginPattern("http://localhost:[*]");
-        config.addAllowedOrigin("http://130.78.91.202:9001");
+        config.addAllowedOriginPattern("http://localhost:49713");
+        config.addAllowedOriginPattern("http://130.78.91.202:9001");
 //        config.addAllowedOrigin("*");
 
         config.addAllowedMethod("*"); // Allow all HTTP methods
